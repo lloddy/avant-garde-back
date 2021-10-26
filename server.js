@@ -5,6 +5,7 @@ const app = express();
 const mongoose = require('mongoose');
 const cors = require('cors');
 const morgan = require('morgan');
+const indexController = require('./controllers/index')
 
 mongoose.connect(DATABASE_URL);
 mongoose.connection
@@ -15,5 +16,7 @@ mongoose.connection
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
+
+app.use('/', indexController);
 
 app.listen(PORT, () => console.log(`Stalking you on port: ${PORT}`));
