@@ -6,7 +6,8 @@ const artistSchema = new Schema ({
     birth: String,
     death: String,
     image: String,
-    bio: String
+    bio: String,
+    era: String
 })
 
 module.exports = mongoose.model('Artists', artistSchema)
