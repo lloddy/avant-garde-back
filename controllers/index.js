@@ -15,7 +15,7 @@ router.get('/artists', async (req, res) => {
     };
 });
 // DELETE
-router.get('/artists/:id', async (req, res) => {
+router.delete('/artists/:id', async (req, res) => {
     try {
         res.json(await Artists.findByIdAndDelete(req.params.id));
     } catch (error) {
