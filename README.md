@@ -21,7 +21,9 @@ This is the databse to store and format data for the React frontend of Avant-Gar
 
 ## *Links*
 [Click here for the backend page](https://avant-garde-backend.herokuapp.com/)
+
 [Click here launch the app](https://avantgardeartists.netlify.app/)
+
 [Click here for the frontend repo](https://github.com/lloddy/avant-garde-front)
 
 ## *Future Enhancements*
